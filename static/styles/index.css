@@ -1,0 +1,24 @@
+.vertical-center {
+    position: absolute;
+    top: 50% -100px;
+    height:100%;
+    width:100%;
+}
+
+.box {
+    padding: 0 50px 0 0px;
+}
+
+
+.text {
+    font-family: 'Secular One', sans-serif;
+    color:#0F4BA6;
+}
+
+@media (max-width: @screen-xs) {
+    body{font-size: 10px;}
+}
+
+@media (max-width: @screen-sm) {
+    body{font-size: 14px;}
+}
