@@ -3,7 +3,7 @@
 <head>
    <title>מכשילים</title>
 <meta charset="utf-8">
-
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <!--    Bootstrap Files   -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
 <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
@@ -30,16 +30,16 @@
                     </div>
 
                     <div class="container">
-                        <form>
+                        <form method="post">
                             <div class="form-group row flex-column-reverse flex-md-row">
                                 <div class="col-sm-9">
-                                  <input type="text" class="form-control" id="usr">
+                                  <input type="text" name="username" class="form-control" id="usr">
                                 </div>
                                 <label class="text text-right col-form-label col-sm-3" style="font-size: 23px" for="usr">:משתמש</label>
                               </div>
                             <div class="form-group row flex-column-reverse flex-md-row">
                                 <div class="col-sm-9">
-                                  <input type="password" class="form-control" id="pwd">
+                                  <input type="password" name="password" class="form-control" id="pwd">
                                 </div>
                                 <label class="text text-right col-form-label col-sm-3" style="font-size: 23px" for="pwd">:סיסמא</label>
                             </div>
