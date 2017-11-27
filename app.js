@@ -11,7 +11,9 @@ var LocalStrategy = require('passport-local').Strategy;
 var mongo = require('mongodb');
 var mongoose = require('mongoose');
 
-mongoose.connect('mongodb://admin:Rl7nq0qzHhSTmiuZ@machshilim-cluster-shard-00-00-ezyeb.mongodb.net:27017,machshilim-cluster-shard-00-01-ezyeb.mongodb.net:27017,machshilim-cluster-shard-00-02-ezyeb.mongodb.net:27017/test?ssl=true&replicaSet=Machshilim-Cluster-shard-0&authSource=admin');
+mongoose.connect('mongodb://admin:Rl7nq0qzHhSTmiuZ@machshilim-cluster-shard-00-00-ezyeb.mongodb.net:27017,machshilim-cluster-shard-00-01-ezyeb.mongodb.net:27017,machshilim-cluster-shard-00-02-ezyeb.mongodb.net:27017/test?ssl=true&replicaSet=Machshilim-Cluster-shard-0&authSource=admin',
+{useMongoClient: true});
+
 var db = mongoose.connection;
 
 var routes = require('./routes/index');

@@ -2,13 +2,15 @@
   "name": "machshilim-server",
   "version": "1.0.0",
   "description": "Machshilim's server side app",
-  "main": "server.js",
+  "main": "app.js",
   "scripts": {
+    "start": "nodemon -L app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Daniel Sagi",
   "license": "ISC",
   "dependencies": {
+    "nodemon": "^1.9.2",
     "bcryptjs": "*",
     "body-parser": "*",
     "connect-flash": "*",
