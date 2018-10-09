@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>מכשילים</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!--    Bootstrap Files   -->
+<link rel="stylesheet" href="/css/bootstrap.css">
+<link rel="stylesheet" href="/css/style.css">
+
+<!--    Fonts   -->
+<link href="https://fonts.googleapis.com/css?family=Secular+One" rel="stylesheet">
+</head>
+<body style="background-color: #f2f2f2">
+
+<div class="container" style="width:85%;position: absolute;top: 0px;bottom: 0px;left:0px;right:0px;">
+    <div class="row h-100 justify-content-center align-items-center vertical-center flex-column-reverse flex-md-row">
+        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+        	{{#if errors}}
+        		{{#each errors}}
+        			<div class="alert alert-danger text-right">{{msg}}</div>
+        		{{/each}}
+        	{{else if success_msg}}
+        		<div class="alert alert-success text-right">{{success_msg}}</div>
+        	{{else if error_msg}}
+        		<div class="alert alert-danger text-right">{{error_msg}}</div>
+			{{else if error}}
+        		<div class="alert alert-danger text-right">{{error}}</div>
+        	{{/if}}
+        	
+            {{{body}}}
+        </div>
+
+        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+            <img src="images/machshilim-logo.png" class="img-fluid" alt="Machshilim Sider">
+        </div>
+
+    </div>
+</div>
+
+
+</body>
+</html>

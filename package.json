@@ -1,0 +1,29 @@
+{
+  "name": "machshilim-server",
+  "version": "1.0.0",
+  "description": "Machshilim's server side app",
+  "main": "app.js",
+  "scripts": {
+    "start": "nodemon -L app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Daniel Sagi",
+  "license": "ISC",
+  "dependencies": {
+    "nodemon": "^1.9.2",
+    "bcryptjs": "*",
+    "body-parser": "*",
+    "connect-flash": "*",
+    "cookie-parser": "^1.4.1",
+    "express": "*",
+    "express-handlebars": "*",
+    "express-messages": "*",
+    "express-session": "*",
+    "express-validator": "*",
+    "mongodb": "*",
+    "mongoose": "*",
+    "passport": "*",
+    "passport-http": "*",
+    "passport-local": "*"
+  }
+}
